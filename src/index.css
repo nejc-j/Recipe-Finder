@@ -45,7 +45,6 @@ code {
   background: linear-gradient(to bottom left, #b0714e, #e4cdb2);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Example shadow for visibility */
   border-radius: 20px;
-  border: 3px solid #2b2522;
 }
 
 .recipe-card img {
