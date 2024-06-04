@@ -908,50 +908,44 @@ code {
     monospace;
 }
 
-.recipe-list {
-  width: 100%;
-  min-height: 250px;
-}
-
-.mySwiper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
 .recipe-card {
   width: 100%;
   max-width: 300px;
+  height: 330px; /* Set a fixed height for the card */
   overflow: hidden;
   background: linear-gradient(to bottom left, #b0714e, #e4cdb2);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Example shadow for visibility */
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .recipe-card img {
   width: 100%;
-  height: auto;
+  height: auto; /* Allow the height to adjust dynamically */
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  position: relative;
-  /* Ensures the pseudo-element is positioned relative to the image */
-  display: block;
-  /* Ensures the image is treated as a block-level element */
+  flex-grow: 1; /* Allow the image to grow to take up remaining space */
 }
 
 .recipe-card h3 {
   word-wrap: break-word;
   text-align: center;
-  margin: 10px;
+  margin: 15px 0;
   font-weight: 700;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
 }
 
 .recipe-card button {
   margin-top: 5px;
+  align-self: flex-end;
 }
 
 .background-image {

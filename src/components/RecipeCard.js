@@ -20,7 +20,7 @@ function RecipeCard({ recipe }) {
       <svg
         onClick={toggleFavorite}
         fill={isFavorite ? 'red' : 'white'}
-        stroke={'currentColor'}
+        stroke={isFavorite ? 'red' : 'currentColor'}
         className='bi bi-heart-fill absolute'
         style={{
           top: '15px',
